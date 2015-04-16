@@ -7,7 +7,7 @@ After creating a new ionic project through > ionic start project_name tabs, we s
  * author tag
 
 
-And then, run npm install to install all required node package for development such as gulp, bower, and so on. Run bower install to install all required packages such as "bower install ngCordova --save". Add  <script src="lib/ng-cordova.js"></script> to the index.html in root www folder before cordova.js.
+And then, run npm install to install all required node packages for development such as gulp, bower, and so on. Run bower install to install all required packages such as "bower install ngCordova --save". Add  <script src="lib/ng-cordova.js"></script> to the index.html in root www folder before cordova.js.
 
 As to cordova plugins, we just need to download them straightway using ">cordova plugin add package_name" (please reference site: http://plugins.cordova.io/#/). No further configuration for the plugins. Cordova or ionic can do with them for us automatically. ngCorvoda can be used in our code directly after installing the required plugin.
 
