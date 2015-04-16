@@ -2,9 +2,9 @@
 
 After creating a new ionic project through > ionic start project_name tabs, we should modify some files for cordova such as config.xml. The items need to be addes into config.xml:
  
- * <name> : the name of the app
- * <description>
- * <author>
+ * name tag : the name of the app
+ * description tag
+ * author tag
 
 
 And then, run npm install to install all required node package for development such as gulp, bower, and so on. Run bower install to install all required packages such as "bower install ngCordova --save". Add  <script src="lib/ng-cordova.js"></script> to the index.html in root www folder before cordova.js.
