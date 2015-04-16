@@ -18,6 +18,7 @@
       $cordovaKeyboard.hideAccessoryBar(true);
 
       $cordovaStatusbar.style(0); // == StatusBar.styleLightContent();
+
     });
   }
 
@@ -30,16 +31,13 @@
     // Set up the various states which the app can be in.
     // Each state's controller can be found in controllers.j
     $stateProvider
-
       // setup an abstract state for the tabs directive
         .state('tab', {
           url: "/tab",
           abstract: true,
           templateUrl: "templates/tabs.html"
         })
-
       // Each tab has its own nav history stack:
-
         .state('tab.dash', {
           url: '/dash',
           views: {
@@ -49,7 +47,6 @@
             }
           }
         })
-
         .state('tab.chats', {
           url: '/chats',
           views: {
@@ -68,7 +65,14 @@
             }
           }
         })
-
+        .state('test', {
+          url: '/test',
+          views: {
+            'test': {
+              templateUrl: 'templates/tab-test.html',
+              controller: 'TestCtrl'
+            }
+          }})
         .state('tab.account', {
           url: '/account',
           views: {
